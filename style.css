@@ -8,10 +8,56 @@
 
 body {
     background-color: rgb(24, 24, 27);
-    color: white;
 }
 
 .date-day {
     display: flex;
     gap: 35px;
+    font-size: 80px;
+    font-weight: 500;
+    width: 95vw;
+    justify-content: space-around;
+    margin: 15px;
+    margin-top: 10vh;
+}
+
+.date {
+    color: #FF69B4;
+}
+
+.day {
+    color: #00FFFF;
+}
+
+.time {
+    font-size: 120px;
+    font-weight: 700;
+    width: 95vw;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20vh;
+    color: rgb(255, 251, 0);
+}
+
+@media screen and (max-width: 880px) {
+    .date-day {
+        flex-direction: column;
+        margin-top: 5vh;
+    }
+
+    .date-day>* {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .date-day {
+        font-size: 65px;
+    }
+
+    .time {
+        font-size: 100px;
+    }
 }
